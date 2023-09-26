@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jabuticaba Store</title>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            
+            <img class="logoimg" src="Jabuticaba_resized_resized.png">
+            <h1 class="logo">Jabuticaba Store</h1>
+            
+          
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#contatoArea">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="categories">
+            <h2 class="categoriaTitulo">Categorias</h2>
+            <ul class="category-list">
+                <li><a href="#">Destaques</a></li>
+                <li><a href="index.html">Iphones</a></li>
+                <li><a href="#">Relógios</a></li>
+                <li><a href="#"><mark>MacBooks</mark></a></li>
+  
+            </ul>
+        </section>
+<section class="product-list">
+    <!-- Produtos existentes -->
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/468145/apple-macbook-air-15-chip-m2-da-apple-com-gpu-de-10-nucleos-8gb-ram-256gb-ssd-meia-noite-mqkw3bz-a_1688062960_gg.jpg" alt="Produto 1">
+        <h2>Iphone 12 Pro Max Apple 128GB branco</h2>
+        <p>Descrição do produto 1.</p>
+        <p class="price">$5000.00</p>
+        <button class="adicionarAoCarrinho" >adicionarAoCarrinho ao Carrinho</button>
+    </article>
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/468143/apple-macbook-air-15-chip-m2-da-apple-com-gpu-de-10-nucleos-8gb-ram-256gb-ssd-estelar-mqku3bz-a_1688062138_gg.jpg" >
+        <h2>Macbook Air gpu 10 nucleos</h2>
+        <p>Descrição do produto 2.</p>
+        <p class="price">$6000.33</p>
+        <button class="adicionarAoCarrinho" >adicionarAoCarrinho ao Carrinho</button>
+    </article>
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/404436/macbook-air-apple-13-6-2k-qhd-processador-m2-8gb-ram-ssd-256gb-ips-macos-spacial-grey-mlxw3bz-a_1671806121_gg.jpg">
+        <h2>Macbook Air 8gb ssd</h2>
+        <p>Descrição do produto 3.</p>
+        <p class="price">$4200.33</p>
+        <button class="adicionarAoCarrinho" >adicionarAoCarrinho ao Carrinho</button>
+    </article>
+
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/160497/Macbook-Air-M1-8GB-256GB-SSD-Tela-13-3-Polegadas-Space-Gray-MGN63LL-A_1693493890_gg.jpg" >
+        <h2>MacBook Air 8gm ssd</h2>
+        <p>Descrição do produto 4.</p>
+        <p class="price">$3000.00</p>
+        <button class="adicionarAoCarrinho" >adicionarAoCarrinho ao Carrinho</button>
+    </article>
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/461316/notebook-gamer-asus-tuf-intel-core-i7-12700h-16gb-ram-ssd-512gb-geforce-rtx3050-15-6-hd-windows-11-home-cinza-fx507zc4-hn113w_1684416166_gg.jpg" >
+        <h2>Notebook-Gamer Asus Strix-Scar Intel core i7</h2>
+        <p>Descrição do produto 5.</p>
+        <p class="price">$4999.00</p>
+        <button class="adicionarAoCarrinho" >adicionarAoCarrinho ao Carrinho</button>
+    </article>
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/446859/Notebook-Gamer-Asus-Strix-Scar-18-Intel-Core-13-Gera-o-I9-13980HX-64GB-RAM-RTX-4090-SSD-4TB-NVMe-Tela-18-Polegadas-Wqxga_1683322149_gg.jpg">
+        <h2>Notebook gamer Strix scar inter core 13</h2>
+        <p>Descrição do produto 6.</p>
+        <p class="price">$4999,00</p>
+        <button class="adicionarAoCarrinho">adicionarAoCarrinho ao Carrinho</button>
+    </article>
+</section>
+
+        
+        
+        <!-- Carrinho de compras -->
+        <aside class="cart">
+            <h2>Carrinho de Compras</h2>
+            <ul class="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+            </ul>
+            <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
+            <button class="checkout">Checkout</button>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2023 JabuticabaStore</p>
+    </footer>
+    <script src="script.js"></script>
+<!-- Seção de Contato -->
+<section class="contact">
+    <div id="contatoArea",="contact-info">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para qualquer dúvida ou informação adicional:</p>
+        <p>Email: contato@JabuticabaStore.com</p>
+        <p>Telefone: (123) 456-7890</p>
+    </div>
+    <div class="contact-form">
+        <h2>Envie-nos uma mensagem</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button>Enviar</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

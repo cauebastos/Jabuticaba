@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jabuticaba Store</title>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            
+            <img class="logoimg" src="Jabuticaba_resized_resized.png">
+            <h1 class="logo">Jabuticaba Store</h1>
+            
+          
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#contatoArea">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="categories">
+            <h2 class="categoriaTitulo">Categorias</h2>
+            <ul class="category-list">
+                <li><a href="#">Destaques</a></li>
+                <li><a href="#"><mark>Iphones</mark></a></li>
+                <li><a href="#">Relógios</a></li>
+                <li ><a href="notebooks.html"> Notebooks </a></li>
+  
+            </ul>
+        </section>
+<section class="product-list">
+    <!-- Produtos existentes -->
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/131016/iphone-11-branco-64gb-mhdc3br-a_1605028378_gg.jpg" alt="Produto 1">
+        <h2>Iphone 12 Pro Max Apple 128GB branco</h2>
+        <p>Descrição do produto 1.</p>
+        <p class="price">$5000.00</p>
+        <button class="adicionarAoCarrinho" data-name="Produto 1" data-price="100.00">Adicionar ao Carrinho</button>
+    </article>
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/393859/iphone-14-pro-max-128gb-dourado-tela-6-7-camera-tripla-12mp-selfie-12mp-mq9r3be-a_1666097415_gg.jpg" alt="Produto 2">
+        <h2>Iphone 14 Pro Max Apple 128GB Dourado</h2>
+        <p>Descrição do produto 2.</p>
+        <p class="price">$6000.33</p>
+        <button class="adicionarAoCarrinho" data-name="Produto 2" data-price="75.00">Adicionar ao Carrinho</button>
+    </article>
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/309766/iPhone-11-Apple-64GB-Preto-6-1-12MP-iOS_1690386495_gg.jpg" alt="Produto 3">
+        <h2>Apple iPhone 12 128GB Meia-Noite 5G</h2>
+        <p>Descrição do produto 3.</p>
+        <p class="price">$4200.33</p>
+        <button class="adicionarAoCarrinho" data-name="Produto 3" data-price="50.00">Adicionar ao Carrinho</button>
+    </article>
+
+    <!-- Novos produtos adicionados abaixo dos existentes -->
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/393866/iphone-14-pro-128gb-roxo-profundo-tela-6-1-camera-tripla-12mp-selfie-12mp-mq0g3be-a_1666098554_gg.jpg" alt="Produto 4">
+        <h2>Iphone 14 Pro Max Apple 128GB Roxo</h2>
+        <p>Descrição do produto 4.</p>
+        <p class="price">$3000.00</p>
+        <button class="adicionarAoCarrinho" data-name="Produto 4" data-price="120.00">Adicionar ao Carrinho</button>
+    </article>
+    <article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/magalu/475506/iPhone-11-Pro-Apple-512GB-Verde-Meia-noite-_1689773827_gg.jpg" alt="Produto 5">
+        <h2>IPhone 11 Pro Apple 512GB Verde Meia-noite</h2>
+        <p>Descrição do produto 5.</p>
+        <p class="price">$4999.00</p>
+        <button class="adicionarAoCarrinho" data-name="Produto 5" data-price="90.00">Adicionar ao Carrinho</button>
+    </article><article class="product">
+        <img src="https://images.kabum.com.br/produtos/fotos/393796/iphone-14-plus-128gb-azul-tela-6-7-camera-dupla-12mp-selfie-12mp-mq523be-a_1666091936_gg.jpg">
+        <h2>Iphone 14 Apple 128gb azul claro</h2>
+        <p>Descrição do produto 6.</p>
+        <p class="price">$4999,00</p>
+        <button class="adicionarAoCarrinho" data-name="Produto 6" data-price="65.00">Adicionar ao Carrinho</button>
+    </article>
+</section>
+
+        
+        
+        <!-- Carrinho de compras -->
+        <aside class="cart">
+            <h2>Carrinho de Compras</h2>
+            <ul class="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+            </ul>
+            <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
+            <button class="checkout">Checkout</button>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2023 JabuticabaStore</p>
+    </footer>
+    <script src="script.js"></script>
+<!-- Seção de Contato -->
+<section class="contact">
+    <div id="contatoArea",class="contact-info">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para qualquer dúvida ou informação adicional:</p>
+        <p>Email: contato@JabuticabaStore.com</p>
+        <p>Telefone: (123) 456-7890</p>
+    </div>
+    <div class="contact-form">
+        <h2>Envie-nos uma mensagem</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button >Enviar</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* Estilos gerais */
+body {
+    background-color: rgba(156, 156, 156, 0.925);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    
+    background-color: #34087ac7;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.logoimg{
+    position: absolute;
+    left: 16%;
+    
+}
+.logo {
+    font-size: 1.5rem;
+    position: relative;
+    top: 3px;
+}
+
+.nav-menu {
+    list-style:none;
+    display:flex;
+    gap: 20px;
+    padding: 1rem;
+    
+}
+
+.nav-menu li {
+    font-size: 1rem;
+
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+}
+
+/* Estilos para a lista de produtos e categorias */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    justify-content: center;
+}
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33.33% - 10px); /* 3 produtos por linha com espaço entre eles */
+    box-sizing: border-box;
+}
+
+/* Estilos para a seção de categorias */
+.categories {
+ font-size: 1.5rem;
+    max-width: 200px;
+    padding: 1rem;
+    position: absolute;
+    left: 3%;
+    top: 100px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+/* Estilos para os produtos */
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.price {
+    font-weight: bold;
+    color: black;
+}
+
+.adicionarAoCarrinho{
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adicionarAoCarrinho:hover {
+    background-color: #ff6f42;
+}
+
+/* Estilos para o carrinho de compras */
+.cart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    max-width: 300px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-total {
+    font-weight: bold;
+}
+
+.checkout {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.checkout:hover {
+    background-color: #ff6f42;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #3333337a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos para a seção de Contato */
+.contact {
+    background-color: #190cd388; /* Cor de fundo */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form form {
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff6f42;
+}
